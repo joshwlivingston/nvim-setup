@@ -1,6 +1,7 @@
 -- ~/nvim/lua/maps.lua
 
 vim.g.mapleader = " "
+vim.g.maplocalleader = " "
 
 local function map(mode, lhs, rhs)
   vim.keymap.set(mode, lhs, rhs, { silent = true })
