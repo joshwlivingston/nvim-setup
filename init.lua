@@ -1,3 +1,3 @@
--- ~/nvim/init.lua
+-- ~/nvim/lua/plugins/init.lua
 
 require("config.lazy")
