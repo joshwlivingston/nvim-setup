@@ -6,7 +6,6 @@ return {
 		"hrsh7th/cmp-nvim-lsp",
 		"hrsh7th/cmp-buffer",
 		"hrsh7th/cmp-path",
-		"R-nvim/cmp-r",
 	},
 	config = function()
 		local cmp = require("cmp")
@@ -20,13 +19,10 @@ return {
 				['<CR>'] = cmp.mapping.confirm({ select = true }),
 			}),
 			sources = cmp.config.sources({
-				{ name = "cmp_r" },
 				{ name = "nvim_lsp" },
 				{ name = "buffer" },
 				{ name = "path" },
 			}),
 		})
-
-		require("cmp_r").setup({})
 	end,
 }
